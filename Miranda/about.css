@@ -1,0 +1,70 @@
+/* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #f1f1f1;
+}
+
+/* Main body style */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181c24 80%, #23272f 100%);
+  color: #f2f2f2;
+  background-image: url('MAGASCAR.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for main box */
+main:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+/* Title */
+h1 {
+  font-size: 2.2rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Paragraph text */
+p {
+  font-size: 35px;
+  line-height: 1.1;
+  color: black;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  main {
+    margin: 40px 20px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
